@@ -19,7 +19,7 @@ export const Header = () => {
 						<Image alt="myImg" src={openBurger} className="absolute top-0 " />
 						<Image alt="myImg" src={closeBurger} className="absolute top-0 left-0.5 " />
 					</button>
-					<div className="absolute w-full right-0 top-full -translate-y-full text-xs uppercase flex justify-center items-center gap-2 lg:flex-col lg:text-start py-1 bg-amber-400 lg:relative lg:w-32 lg:h-32 lg:right-28 lg:top-0 lg:translate-y-0">
+					<div className="absolute w-full right-0 top-full -translate-y-full text-xs uppercase flex justify-center items-center gap-2 lg:flex-col lg:text-start py-1 bg-orangeBg lg:relative lg:w-32 lg:h-32 lg:right-28 lg:top-0 lg:translate-y-0">
 						<span className=" lg:font-bold">Order</span>
 						<span className="lg:hidden">trident</span>
 						<span className="">Catalogue</span>
