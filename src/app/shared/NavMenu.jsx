@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const NavMenu = () => {
 	return (
-		<ul className=" text-xl, lg:flex gap-4 text-base font-sans">
+		<ul className="lg:text-base font-sans text-xl lg:flex gap-4 ">
 			<li>
 				<Link href="/">Home</Link>
 			</li>
