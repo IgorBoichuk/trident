@@ -1,7 +1,10 @@
+import React from "react";
 import { Container } from "@/app/shared/Container";
 import { FilterButton } from "@/app/shared/FilterButton";
 import { SingleCard } from "@/app/shared/SingleCard";
-import React from "react";
+import { designess } from "../../assets/mocdata/mocToDesignes";
+
+import pic from "../../assets/galary/houses/1.png";
 
 export const OurDesigns = () => {
 	const bg = false;
@@ -13,7 +16,9 @@ export const OurDesigns = () => {
 					<FilterButton name="Garden rooms" bg={bg} />
 					<FilterButton name="Мodular houses" bg={bg} />
 				</div>
-				<SingleCard />
+				{designess.map(item => (
+					<SingleCard picture={item.picture} title={item.title} description={item.description} />
+				))}
 			</Container>
 		</div>
 	);
