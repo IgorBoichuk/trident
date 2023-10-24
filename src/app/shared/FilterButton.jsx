@@ -1,7 +1,6 @@
 import React from "react";
 
 export const FilterButton = ({ name, bg }) => {
-	console.log(bg);
 	return (
 		<button
 			className={
