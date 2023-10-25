@@ -6,7 +6,7 @@ export const FilterButton = ({ name, bg }) => {
 			className={
 				bg
 					? "border-l border-t border-b border-r-8 px-3 py-2 border-orangeBg bg-orangeBg"
-					: "border-l border-t border-b border-r-8 px-3 py-2 border-orangeBg"
+					: "border-l border-t border-b border-r-8 px-3 py-2 border-orangeBg hover:bg-orangeBg"
 			}
 		>
 			{name}
