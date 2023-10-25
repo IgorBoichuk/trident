@@ -14,9 +14,13 @@ export const OurDesigns = () => {
 					<FilterButton name="Garden rooms" bg={bg} />
 					<FilterButton name="Мodular houses" bg={bg} />
 				</div>
-				{designess.map(item => (
-					<SingleCard picture={item.picture} title={item.title} description={item.description} alt={item.title} />
-				))}
+				<ul className="flex flex-col gap-7">
+					{designess.map(item => (
+						<li>
+							<SingleCard picture={item.picture} title={item.title} description={item.description} alt={item.title} />
+						</li>
+					))}
+				</ul>
 			</Container>
 		</div>
 	);
