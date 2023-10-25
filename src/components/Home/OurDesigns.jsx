@@ -16,7 +16,7 @@ export const OurDesigns = () => {
 				</div>
 				<ul className="flex flex-col gap-7">
 					{designess.map(item => (
-						<li>
+						<li key={item.id}>
 							<SingleCard picture={item.picture} title={item.title} description={item.description} alt={item.title} />
 						</li>
 					))}

@@ -16,6 +16,9 @@ module.exports = {
 				mainBg: "#00204A",
 				orangeBg: "#F4D059",
 			},
+			fontFamily: {
+				Lato: ["Lato", "sans-serif"],
+			},
 		},
 	},
 	plugins: [],
