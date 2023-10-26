@@ -9,8 +9,8 @@ export const Catalogue = () => {
 	return (
 		<section>
 			<Container>
-				<div className=" border-[1px] border-[#F5F5F5] rounded-[5px] pt-[23px] pb-[68px] shadow-md shadow-grey">
-					<p className=" font-Lato font-light text-[26px] text-center">Order our catalogue for free</p>
+				<div className="border-[1px] border-[#F5F5F5] rounded-[5px] pt-[23px] pb-[68px] shadow-md shadow-grey">
+					<p className="font-Lato font-light text-[26px] text-center">Order our catalogue for free</p>
 					<p className="font-Lato text-center px-[21px] mb-[24px]">
 						Lorem ipsim dolor set amet lorem ipsim dolor set amet lorem ipsim dolor set amet{" "}
 					</p>

@@ -6,7 +6,7 @@ import { Container } from "@/app/shared/Container";
 
 export const Interiors = () => {
 	return (
-		<section>
+		<section className=" overflow-hidden">
 			<Container>
 				<div>
 					<div className="relative ">
