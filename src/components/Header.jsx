@@ -1,17 +1,17 @@
 import React from "react";
 import { NavMenu } from "@/app/shared/NavMenu";
 import Image from "next/image";
-import logo from "../assets/galary/logo.png";
 import openBurger from "../assets/svg/burgermenu.svg";
 import closeBurger from "../assets/svg/closeburgermenu.svg";
 import { Container } from "@/app/shared/Container";
+import { Logo } from "@/app/shared/Logo";
 
 export const Header = () => {
 	return (
 		<header className=" relative px-2 py-3">
 			<Container>
 				<div className="flex justify-between  pb-5 ">
-					<Image src={logo} alt="" className=" w-28 " />
+					<Logo header />
 					<div className="hidden lg:block">
 						<NavMenu />
 					</div>
