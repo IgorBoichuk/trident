@@ -1,9 +1,11 @@
 import React from "react";
 import Link from "next/link";
 
-export const NavMenu = () => {
+export const NavMenu = ({ vertical, gap }) => {
+	// const column = vertical ? "flex-col" : null;
+
 	return (
-		<ul className="lg:text-base font-sans text-xl lg:flex gap-4 ">
+		<ul className={`lg:text-base font-sans text-xl lg:flex gap-4 ${vertical} ${gap}`}>
 			<li>
 				<Link href="/">Home</Link>
 			</li>
