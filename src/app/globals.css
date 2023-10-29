@@ -4,3 +4,41 @@
 .ReactCollapse--collapse {
   transition: height 500ms;
 }
+
+.swiper-button-prev{
+--swiper-navigation-size: 20px;
+--swiper-navigation-top-offset: 50%;
+--swiper-navigation-sides-offset: 31%;
+--swiper-navigation-color:#00204A;
+  
+background-color: #F4D059;
+padding: 20px;
+}
+
+.swiper-button-prev:hover{
+  background-color: #00204A;
+  --swiper-navigation-color: #fff;
+}
+.swiper-button-prev:focus {
+  background-color: #00204A;
+  --swiper-navigation-color: #fff;
+}
+
+.swiper-button-next{
+--swiper-navigation-size: 20px;
+--swiper-navigation-top-offset: 50%;
+--swiper-navigation-sides-offset: 31%;
+--swiper-navigation-color: #00204A;
+  
+background-color: #F4D059;
+padding: 20px;
+}
+
+.swiper-button-next:hover {
+  background-color: #00204A;
+  --swiper-navigation-color: #fff;
+}
+.swiper-button-next:focus {
+  background-color: #00204A;
+  --swiper-navigation-color: #fff;
+}
