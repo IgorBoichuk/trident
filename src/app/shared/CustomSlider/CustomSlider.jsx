@@ -3,10 +3,47 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 export const CustomSlider = ({ data }) => {
-	// const [currentItem, setCurrentItem] = useState(0);
 	const [step, setStep] = useState(0);
-	const [length, setLength] = useState(3);
+	const [length, setLength] = useState();
 	const [currentItem, setCurrentItem] = useState(data.slice(step, length));
+
+	// const mobile = windowSize < 768;
+	// const tablet = windowSize < 1024;
+	// const descktop = windowSize < 1366;
+
+	let sliderLength;
+
+	const windowSize = window.screen.width;
+	useEffect(() => {
+		switch (windowSize) {
+			case 768:
+				// sliderLength = 1;
+				// setLength(sliderLength);
+				setLength(1);
+
+				break;
+
+			case 1024:
+				// sliderLength = 2;
+				// setLength(sliderLength);
+				setLength(2);
+				break;
+
+			case 1366:
+				// sliderLength = 3;
+				// setLength(sliderLength);
+				setLength(3);
+				break;
+
+			default:
+				// sliderLength = 1;
+				setLength(5);
+				break;
+		}
+		console.log(sliderLength);
+	}, []);
+
+	console.log(length);
 
 	const next = () => {
 		step <= data.length - 3
