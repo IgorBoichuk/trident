@@ -18,7 +18,7 @@ export const SwiperSlider = ({ data }) => {
 			navigation
 		>
 			{data.map(item => (
-				<SwiperSlide>
+				<SwiperSlide key={item.id}>
 					<Image src={item.picture} alt={"picture"} className=" w-full h-full" />
 				</SwiperSlide>
 			))}
