@@ -12,9 +12,10 @@ export const SwiperSlider = ({ data }) => {
 			modules={[Navigation, A11y, Autoplay]}
 			spaceBetween={5}
 			slidesPerView={3}
+			autoplay={{
+				delay: 3000,
+			}}
 			navigation
-			onSlideChange={() => console.log("slide change")}
-			onSwiper={swiper => console.log(swiper)}
 		>
 			{data.map(item => (
 				<SwiperSlide>
